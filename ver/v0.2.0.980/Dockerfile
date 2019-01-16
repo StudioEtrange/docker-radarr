@@ -6,7 +6,7 @@ LABEL description "Radarr on docker"
 
 # Service generic parameters
 ENV SERVICE_NAME radarr
-ENV SERVICE_VERSION v0.2.0.1217
+ENV SERVICE_VERSION v0.2.0.980
 # User id which will launch the service start command (NOTE : supervisord itself is run with root)
 ENV SERVICE_USER 0
 ENV SERVICE_PORT 7878
