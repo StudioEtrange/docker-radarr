@@ -12,7 +12,8 @@
 
 for running latest stable version of radarr :
 
-	docker --name radarr run -d -v $(pwd):/data -p 7878:7878 studioetrange/docker-radarr
+	mkdir -p data
+	docker --name radarr run -d -v $(pwd)/data:/data -p 7878:7878 studioetrange/docker-radarr
 
 then go to http://localhost:7878
 
