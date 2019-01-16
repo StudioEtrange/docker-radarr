@@ -5,7 +5,7 @@ _CURRENT_FILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$_CURRENT_FILE_DIR"
 
 # PARAMETERS ----------------------------
-GITHUB_REPO="pymedusa/Medusa"
+GITHUB_REPO="Radarr/Radarr"
 # remove this string to version name (ex : with 'build' value, 'build507' becomes '507')
 FILTER_VERSION_NAME=""
 
