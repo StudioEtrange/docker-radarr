@@ -13,6 +13,9 @@ VERSION_SEPARATOR="."
 # revert version ordering for letter behind number (ex: with 'ON' value, 1.2 is newer than 1.2rc1)
 VERSION_INVERSE_LAST_CHAR=ON
 
+# Use github tags instead of github releases
+USE_TAG_AS_RELEASE=0
+
 # exclude these tag/release name
 EXCLUDE_VERSION=""
 
