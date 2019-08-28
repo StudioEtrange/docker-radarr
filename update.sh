@@ -13,8 +13,8 @@ VERSION_SEPARATOR="."
 # revert version ordering for letter behind number (ex: with 'ON' value, 1.2 is newer than 1.2rc1)
 VERSION_INVERSE_LAST_CHAR=ON
 
-# Use github tags instead of github releases
-USE_TAG_AS_RELEASE=0
+# exclude these tag/release name
+EXCLUDE_VERSION=""
 
 # INITIALIZE ----------------------------
 version_order_option=
@@ -48,22 +48,22 @@ function update_readme() {
 # GENERIC FUNCTIONS ----------------------------
 # sort a list of version
 
-#sorted=$(__sort_version "build507 build510 build403 build4000 build" "ASC")
+#sorted=$(sort_version "build507 build510 build403 build4000 build" "ASC")
 #echo $sorted
 # > build build403 build507 build510 build4000
-#sorted=$(__sort_version "1.1.0 1.1.1 1.1.1a 1.1.1b" "ASC SEP .")
+#sorted=$(sort_version "1.1.0 1.1.1 1.1.1a 1.1.1b" "ASC SEP .")
 #echo $sorted
 # > 1.1.0 1.1.1 1.1.1a 1.1.1b
-#sorted=$(__sort_version "1.1.0 1.1.1 1.1.1a 1.1.1b" "DESC SEP .")
+#sorted=$(sort_version "1.1.0 1.1.1 1.1.1a 1.1.1b" "DESC SEP .")
 #echo $sorted
 # > 1.1.1b 1.1.1a 1.1.1 1.1.0
-#sorted=$(__sort_version "1.1.0 1.1.1 1.1.1alpha 1.1.1beta1 1.1.1beta2" "ASC ENDING_CHAR_REVERSE SEP .")
+#sorted=$(sort_version "1.1.0 1.1.1 1.1.1alpha 1.1.1beta1 1.1.1beta2" "ASC ENDING_CHAR_REVERSE SEP .")
 #echo $sorted
 # > 1.1.0 1.1.1alpha 1.1.1beta1 1.1.1beta2 1.1.1
-#sorted=$(__sort_version "1.1.0 1.1.1 1.1.1alpha 1.1.1beta1 1.1.1beta2" "DESC ENDING_CHAR_REVERSE SEP .")
+#sorted=$(sort_version "1.1.0 1.1.1 1.1.1alpha 1.1.1beta1 1.1.1beta2" "DESC ENDING_CHAR_REVERSE SEP .")
 #echo $sorted
 # > 1.1.1 1.1.1beta2 1.1.1beta1 1.1.1alpha 1.1.0
-#sorted=$(__sort_version "1.9.0 1.10.0 1.10.1.1 1.10.1 1.10.1alpha1 1.10.1beta1 1.10.1beta2 1.10.2 1.10.2.1 1.10.2.2 1.10.0RC1 1.10.0RC2" "DESC ENDING_CHAR_REVERSE SEP .")
+#sorted=$(sort_version "1.9.0 1.10.0 1.10.1.1 1.10.1 1.10.1alpha1 1.10.1beta1 1.10.1beta2 1.10.2 1.10.2.1 1.10.2.2 1.10.0RC1 1.10.0RC2" "DESC ENDING_CHAR_REVERSE SEP .")
 #echo $sorted
 # > 1.10.2.2 1.10.2.1 1.10.2 1.10.1.1 1.10.1 1.10.1beta2 1.10.1beta1 1.10.1alpha1 1.10.0 1.10.0RC2 1.10.0RC1 1.9.0
 
@@ -289,8 +289,6 @@ echo
 echo "************************************"
 echo " YOU SHOULD NOW ADD MISSING VERSION THROUGH"
 echo " Docker Hub WebUI : AUTOMATED BUILD REPOSITORY"
-
-
 
 
 
