@@ -17,7 +17,7 @@ VERSION_INVERSE_LAST_CHAR=ON
 USE_TAG_AS_RELEASE=0
 
 # exclude these tag/release name
-EXCLUDE_VERSION=""
+EXCLUDE_VERSION="0.05 v0.1-a v0.1-b v0.1-c v0.1-d v0.1-e v0.1-f"
 
 # INITIALIZE ----------------------------
 version_order_option=
