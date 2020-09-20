@@ -21,7 +21,7 @@ then go to http://localhost:7878
 
 Pre-setted buildable docker tags for studioetrange/docker-radarr:__TAG__
 
-	latest, v0.2.0.1504, v0.2.0.1480, v0.2.0.1450
+	latest, v0.2.0.1504, v0.2.0.1480, v0.2.0.1450, v0.2.0.1358
 
 Current latest tag is version __v0.2.0.1504__
 

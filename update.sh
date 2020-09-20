@@ -23,7 +23,7 @@ USE_TAG_AS_RELEASE="0"
 EXCLUDE_VERSION="0.05 v0.1-a v0.1-b v0.1-c v0.1-d v0.1-e v0.1-f"
 
 # see filter_version_list doc in https://github.com/StudioEtrange/stella/blob/stable/nix/common/common.sh
-VERSION_CONSTRAINT=">=v0.2.0.1450"
+VERSION_CONSTRAINT=">=v0.2.0.1358"
 
 # GITHUB AUTHENTIFICATION --------------------------------
 # use your account to request github api
